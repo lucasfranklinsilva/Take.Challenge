@@ -14,7 +14,7 @@ A API foi publicada no Serviço de Aplicado da Azure e está documentada no *Swa
 | **Parâmetros** | **Tipo** |**Valores** | **Descrição** |
 |--|--|--|--|
 | user | string | any |Usuário do github  |
-| quantity | integer | any | Quantidade de Repositórios |
+| quantity | integer | any | Quantidade de repositórios |
 | sort | string | created, updated, pushed, full_name |Campo de ordenação |
 | direction | string | asc, desc|A ordem da ordenação |
 
