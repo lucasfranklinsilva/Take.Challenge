@@ -1,0 +1,20 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0
+ARG BUILD_CONFIGURATION=Debug
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV DOTNET_USE_POLLING_FILE_WATCHER=true
+EXPOSE 80
+
+WORKDIR /src
+COPY ["GitHubIntegration.Facades/GitHubIntegration.Facades.csproj", "GitHubIntegration.Facades/"]
+COPY ["GitHubIntegration.Models/GitHubIntegration.Models.csproj", "GitHubIntegration.Models/"]
+COPY ["GitHubIntegration.Services/GitHubIntegration.Services.csproj", "GitHubIntegration.Services/"]
+COPY ["GitHubIntegration/GitHubIntegration.csproj", "GitHubIntegration/"]
+
+RUN dotnet restore "GitHubIntegration/GitHubIntegration.csproj"
+COPY . .
+WORKDIR "/src/GitHubIntegration"
+RUN dotnet build --no-restore "GitHubIntegration.csproj" -c $BUILD_CONFIGURATION
+
+RUN echo "exec dotnet run --no-build --no-launch-profile -c $BUILD_CONFIGURATION --" > /entrypoint.sh
+
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
