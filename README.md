@@ -4,12 +4,12 @@ O propósito geral foi a criação de um chatbot que apresente os principais pil
 
 # Arquitetura
 ## Chatbot
-O chatbot foi desenvolvido na plataforma da Take BLiP, utilizando o *Builder* para criação do fluxo conversacional e *Javascript* para processamento das informações.
+O chatbot foi desenvolvido na plataforma da Take BLiP, utilizando o *Builder* para criação do fluxo conversacional e *Javascript* para processamento das informações. O chatbot pode ser acessado através do link: 
 Foi utilizado o serviço https://imgbb.com/ para hospedagem das imagens.
 
 ## API
 A API foi desenvolvida em *C#* no framework *.Net Core*. Foi utilizado um template de projeto que utiliza o padrão *Onion* de desenvolvimento para abstração do código. 
-A API foi publicada no Serviço de Aplicado da Azure e está documentada no *Swagger* e disponível através da URL: [https://githubintegration20230125124833.azurewebsites.net/](https://githubintegration20230125124833.azurewebsites.net/)
+A API foi publicada no Serviço de Aplicado da Azure e está documentada no *Swagger* e disponível através da URL: [Github Integration](https://githubintegration20230125124833.azurewebsites.net/)
 
 | **Parâmetros** | **Tipo** |**Valores** | **Descrição** |
 |--|--|--|--|
@@ -38,7 +38,7 @@ The service https://imgbb.com/ was used to host the images.
 
 ## API
 The API was developed in *C#* in the *.Net Core* framework. A project template that uses the *Onion* development pattern for code abstraction was used.
-The API has been published on Azure Applied Service and is documented in *Swagger* and available through the URL: [https://githubintegration20230125124833.azurewebsites.net/](https://githubintegration20230125124833.azurewebsites.net/)
+The API has been published on Azure Applied Service and is documented in *Swagger* and available through the URL: [Github Integration](https://githubintegration20230125124833.azurewebsites.net/)
 
 | **Parameters** | **Type** |**Values** | **Description** |
 |--|--|--|--|
