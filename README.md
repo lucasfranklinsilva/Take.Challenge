@@ -52,6 +52,6 @@ The API has been published on Azure Applied Service and is documented in *Swagge
 ```
 Take.Challenge
 |── API
-|── flow
+|── Flow
 |    └─ mybotflow.json
 ```
