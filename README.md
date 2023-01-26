@@ -32,7 +32,7 @@ This project is a technical challenge from the company [Take BLiP](https://www.t
 The general purpose was to create a chatbot that presents the main pillars of Take and, through an integration with Github, bring the company's oldest repositories in the **C#** language.
 
 # Architecture
-## chatbot
+## Chatbot
 The chatbot was developed on the Take BLiP platform, using the *Builder* to create the conversational flow and *Javascript* to process the information.
 The service https://imgbb.com/ was used to host the images.
 
@@ -53,5 +53,5 @@ The API has been published on Azure Applied Service and is documented in *Swagge
 Take.Challenge
 |── API
 |── flow
-| └─ mybotflow.json
+|    └─ mybotflow.json
 ```
