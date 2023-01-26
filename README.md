@@ -1,4 +1,4 @@
-# Take Challenge [PT🇧🇷]
+# [PT]Take Challenge 
 Esse projeto é um desafio técnico da empresa [Take BLiP](https://www.take.net/blip/). 
 O propósito geral foi a criação de um chatbot que apresente os principais pilares da Take e através de uma integração com o Github, trazer os repositórios mais antigos da empresa na linguagem **C#**.
 
@@ -27,7 +27,7 @@ Take.Challenge
 |    └─ mybotflow.json
 ```
 
-# Take Challenge [EN🇬🇧]
+# [EN]Take Challenge 
 This project is a technical challenge from the company [Take BLiP](https://www.take.net/blip/).
 The general purpose was to create a chatbot that presents the main pillars of Take and, through an integration with Github, bring the company's oldest repositories in the **C#** language.
 
