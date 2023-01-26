@@ -26,12 +26,11 @@ namespace GithubIntegration.Facades.Github
 
             var repoList = await _requestGithubService.RepositoriesList(user, consult);
 
-            var repoListSized = repoList.Take(quantity);
+            var repoListSized = repoList.Where(r => r.language == ConstantsGithub.FILTER_LANGUAGE).Take(quantity);
 
-            IEnumerable<RepositoriesDto> repositories = repoListSized.Select(x => RepositoriesToDTO(x));
-
-            return repositories;
+            return repoListSized.Select(x => RepositoriesToDTO(x)); 
         }
+        
         internal RepositoriesDto RepositoriesToDTO(Repositories repos)
         {
             if (repos == null) return null;
